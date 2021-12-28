@@ -17,8 +17,7 @@ class CreatePostsTable extends Migration
             $table->id();
             
             //Generamos los campos de la tabla
-            $table->unsignedBigIteger('course_id');
-            $table->unsignedBigIteger('category_id');
+            $table->unsignedBigInteger('course_id');
             
             $table->string('name');
             $table->boolean('free')->default(0);
@@ -26,7 +25,7 @@ class CreatePostsTable extends Migration
             $table->timestamps();
 
             //Establecemos la relación            
-            $table-foreign('course_id')->references->on('courses');
+            $table->foreign('course_id')->references('id')->on('courses');
         });
     }
 

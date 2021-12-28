@@ -17,8 +17,8 @@ class CreateCoursesTable extends Migration
             $table->id();
 
             //Generamos los campos de la tabla
-            $table->unsignedBigIteger('user_id');
-            $table->unsignedBigIteger('category_id');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('category_id');
             
             $table->string('name');
             $table->string('slug');
@@ -28,8 +28,8 @@ class CreateCoursesTable extends Migration
             $table->timestamps();
 
             //Establecemos la relación
-            $table-foreign('user_id')->references->on('users');
-            $table-foreign('category_id')->references->on('categories');
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('category_id')->references('id')->on('categories');
         });
     }
 

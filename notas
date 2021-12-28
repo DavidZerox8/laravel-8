@@ -1,10 +1,12 @@
-//comandos
+//comandos 
 
+**Clase 1** 
 --Crear un nuevo proyecto de laravel 8:
 
 /* laravel new proyecto 
 /* laravel new proyecto --jet   -> Añadimos Jetstream a la instalación de laravel.
 
+**Clase 2** 
 --En caso de querer generar los recursos de migración y factory:
 
 /* php artisan make:model Model -mf
@@ -34,3 +36,29 @@ Es la representación de la tabla dentro de nuestro proyecto de laravel.
 /* $table-foreign('campoLlaveForenea')->references->on('tablaDeReferencia');
 /* $table-foreign('user_id')->references->on('users');
  
+ **Clase 3** 
+
+ --¿Qué son los Datos Seed?
+ Los datos Seed o semilla es información inicial(o de prueba) dentro de las tablas para validar su funcionalidad y realizar pruebas. 
+
+ n-- Migración es la estructura de la tabla, los factories es la estructura de la generación de datos seed. 
+
+--Para establecer la estructura de los datos dentro de nuestro factory, utilizamos la siguiente sintaxis:
+
+/* 'nombreDelCampo' =>$this->faker->tipoDeDatoAGenerar
+/* 'name' => $this->faker->word
+
+Donde; 
+
+• $this es la varible que hace referencia al factory donde definimos el dato.
+• faker es el metodo para generar la información de prueba. 
+
+--Si quieremos definir cuantos datos de prueba se van a crear, vamos al seeder/DatabaseSeeder-php y dentro de la funcion 'run' utilizamos el siguiente comando:
+
+/* User::factory(10)->create();
+
+Donde;
+
+• User es el modelo al que hacemos referencia.
+• factory es el metodo que conecta con el factory que configuramos anterioemente para extraer la estrucutura y generar los datos de prueba. 
+• 10 es la cantidad de registros que deseamos generar. 
