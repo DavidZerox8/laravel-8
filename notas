@@ -1,0 +1,11 @@
+//comandos
+
+--Crear un nuevo proyecto de laravel 8
+
+/* laravel new proyecto 
+/* laravel new proyecto --jet   -> Añadimos Jetstream a la instalación de laravel.
+
+--En caso de querer generar los recursos de migración y factory:
+
+/* php artisan make:model Model -mf
+
