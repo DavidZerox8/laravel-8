@@ -1,6 +1,6 @@
 //comandos
 
---Crear un nuevo proyecto de laravel 8
+--Crear un nuevo proyecto de laravel 8:
 
 /* laravel new proyecto 
 /* laravel new proyecto --jet   -> Añadimos Jetstream a la instalación de laravel.
@@ -8,4 +8,29 @@
 --En caso de querer generar los recursos de migración y factory:
 
 /* php artisan make:model Model -mf
+/* php artisan make:model Category -mf
 
+---¿Qué es una migración?
+Es la estructura de una tabla que debemos tener dentro de nuestro proyecto en laravel
+
+--¿Qué es un factory?
+Es la estructura de los datos, donde se almacenan datos de prueba para validar la construncción del proyecto.
+
+--¿Qué es un modelo?
+Es la representación de la tabla dentro de nuestro proyecto de laravel.
+
+--En caso de que se haya borrado algun elemento de nuestro proyecto en laravel, utilizamos el comando:
+
+/* composer install
+
+
+--Para crear campos dentro de nuestro modelos, utilizamos la siguiente sintaxis:
+
+/*  $table->tipoDeDato('nombreDelCampo');
+/*  $table->string('name');
+
+--Para generar una realción con una tabla, utilizamos el siguiente comando dentro de nuestro modelo:
+
+/* $table-foreign('campoLlaveForenea')->references->on('tablaDeReferencia');
+/* $table-foreign('user_id')->references->on('users');
+ 
