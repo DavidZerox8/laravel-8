@@ -110,3 +110,13 @@ Diseño de componente - livewire
 Creación de campor virtuales
 
 
+**clase 8 **
+Creación de página individual del curso
+
+--crear controladores:
+
+/* php artisan make:controller NombreControlador
+
+
+
+
