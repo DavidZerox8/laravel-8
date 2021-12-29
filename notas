@@ -140,5 +140,10 @@ Un Componente Livewire puede tener dentro de si N cantidad de componentes Blade,
 **clase 12**
 Jetstream - Personalización
 
+**Clase 13**
+Repaso final
 
+--Obtener o publicar las vistas de jetstram:
+
+/* php artisan vendor:publish [24]
 
