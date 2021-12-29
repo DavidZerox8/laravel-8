@@ -5,9 +5,16 @@
 
     <div class="grid grid-cols-3 gap-4">
         <div class="p-8 bg-gray-200 col-span-1">
-            <ul class="flex felx-col">
+            <ul class="flex flex-col">
                 <li class="font-medium text-sm text-gray-400 uppercase mb-4">Contenido</li>
-                ---
+                @foreach ($course->posts as $post)
+                    <li class="flex items-center text-gray-600 mt-2">
+                        {{ $post->name }}
+                        @if ($post->free)
+                            <span class="text-xs text-gray-500 font-semibold bg-emerald-800 px-2 rounded-full ml-auto">Gratis</span>
+                        @endif
+                    </li>
+                @endforeach
             </ul>
         </div>
         <div class="text-gray-700 col-span-2">
