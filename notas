@@ -121,7 +121,21 @@ Creación de página individual del curso
 Lecciones
 Se termino el listado de clases en la vista del curso individual
 
-**clase 10
+**clase 10**
+Cursos similares
+
+
+**Clase 11**
+Componentes
+
+--Para generar componentes dentro de nuestro proyecto, utilizamos el siguiente código:
+
+/* php artisan make:component nombreComponente
+
+Un Componente Blade es un código HTML sin mayor complejidad.
+
+Un Componente Livewire puede tener dentro de si N cantidad de componentes Blade, además de su propia lógica. (En teoria)
+
 
 
 
