@@ -62,3 +62,51 @@ Donde;
 • User es el modelo al que hacemos referencia.
 • factory es el metodo que conecta con el factory que configuramos anterioemente para extraer la estrucutura y generar los datos de prueba. 
 • 10 es la cantidad de registros que deseamos generar. 
+
+
+**Clase 4** 
+--Generar una llave de encriptación:
+
+/* php artisan key:generate 
+
+
+--En caso de no tener jetstream instalado utilizamos el siguiente comando 
+
+/* composer require laravel/jetstream 
+
+-- proceso de implementación de jetstream en nuestro proyecto base de laravel
+
+/* php artisan jetstream:install livewire
+
+donde:
+
+• livewire es la tecnologia a utilizar, la cual podemos cambiar por las que haya disponibles. 
+
+--Para inicializar los elementos del frontend una vez tenemos jetstream instalado, usamos:
+
+/* npm install [Instala node para la vista del front]
+/* npm run dev [Ejecuta la configuración que tenemos en el archivo webpack.mix.js]
+
+/* npm install & npm run dev [código simplificado]
+
+
+**Clase 5**
+
+n-- Fueron principalmente cambios dentro del código de las plantillas. 
+
+**Clase 6**
+
+Livewire - Interfaces dinamicas de forma simle y sencilla. 
+
+--Creación de componentes livewire
+
+/* php artisan make:livewire componente
+
+n--Todos los componentes deben existir en un único contenedor o o div
+
+**Clase 7 **
+
+Diseño de componente - livewire
+Creación de campor virtuales
+
+
