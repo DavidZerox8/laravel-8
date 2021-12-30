@@ -17,4 +17,8 @@ class PageController extends Controller
     {
         return view('course', compact('course'));
     }
+
+    public function app(){
+        return view('app');
+    }
 }

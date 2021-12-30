@@ -17,7 +17,7 @@ use App\Http\Controllers\PageController; //
     return view('index');
 }); */
 
-Route::get('/', [PageController::class, 'home'])->name('home');
+Route::get('/', [PageController::class, 'app'])->name('app');
 Route::get('curso/{course:slug}', [PageController::class, 'course'])->name('course');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
