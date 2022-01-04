@@ -56,14 +56,12 @@
             @yield('content')
         </div>
     </main>   
-    <footer class="py-4 text-center">
-        
-        <div class="bg-gray-200 py-2">
-            <p>Todos los derechos reservados</p>
-
-
-        </div>
-
+    <footer class="text-center text-white pt-5" style="background-color: #f1f1f1;">
+        <x-footer />
+        <div class="text-center text-gray-700 p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-gray-800" href="https://tailwind-elements.com/">Tailwind Elements</a>
+          </div>        
     </footer> 
 </body>
 </html>
