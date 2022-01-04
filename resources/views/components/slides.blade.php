@@ -1,3 +1,3 @@
 <div>
-    <img src="https://mdbootstrap.com/img/new/slides/041.jpg" class="max-w-full h-auto" alt="..." />
+    <img src="https://solucionesrp.com.mx/imagenes/dev/portadas/Portada%202.png" class="max-w-full h-auto" alt="..." />
 </div>

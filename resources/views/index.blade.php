@@ -1,7 +1,7 @@
 @extends('layouts.web')
 
 @section('content')
-    <div class="text-center">
+    <div class="text-center pt-5">
         <h1 class="text-2xl text-gray-700 mb-2 uppercase">
             Últimos cursos
         </h1>

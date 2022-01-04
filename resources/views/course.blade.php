@@ -1,7 +1,7 @@
 @extends('layouts.web')
 
 @section('content')
-    Detalles del curso
+    <h1 class="py-2 text-gray-500 text-xl">Detalles del curso</h1>
 
     <div class="grid grid-cols-3 gap-4">
         <div class="p-8 bg-gray-200 col-span-1">
@@ -19,7 +19,7 @@
         </div>
         <div class="text-gray-700 col-span-2">
             <img src="{{ $course->image }}" alt="">
-            <h2 class="text-4xl">{{ $course->name }}</h2>
+            <h2 class="text-4xl text-emerald-600">{{ $course->name }}</h2>
             <p>{{ $course->description }}</p>
             
             <div class="flex mt-3">
